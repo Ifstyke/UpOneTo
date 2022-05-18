@@ -20,7 +20,6 @@ import java.util.List;
  */
 @Api(tags = "数据字典接口")
 @RestController
-@CrossOrigin
 @RequestMapping("/admin/cmn/dict")
 public class DictController {
 

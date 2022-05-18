@@ -19,7 +19,6 @@ import java.util.Map;
 @Api(value = "科室排班接口")
 @RestController
 @RequestMapping("/admin/hosp/schedule")
-@CrossOrigin
 public class ScheduleController {
     @Autowired
     private ScheduleService scheduleService;
