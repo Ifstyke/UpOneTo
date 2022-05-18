@@ -26,4 +26,17 @@
 2. 对海量数据的高效率存储和访问
 3. 对数据库的高扩展性和高可用性
 
+# 后台系统，医院管理模块
+## 通过service_hosp远程调用service_cmn模块，使用Nacos作为注册中心
+- 启动nacos时报错解决方法，删除nacos/data目录下的derby-data目录
+- 将service_cmn和service_hosp模块注册到nacos中
+    1. 添加依赖
+        ```xml
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>2.2.0.RELEASE</version>     
+            </dependency>
+        ```
+       **这里千万注意踩坑，Spring Cloud Alibaba 版本和Spring Boot版本有着对应关系，如果不对应，会出现添加依赖错误，参考见博客：https://blog.csdn.net/m0_37352076/article/details/120650897**
     
