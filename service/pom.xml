@@ -15,6 +15,11 @@
         <module>service_user</module>
         <module>service_hosp</module>
         <module>service_cmn</module>
+        <module>service_msm</module>
+        <module>service_oss</module>
+        <module>service_order</module>
+        <module>service_task</module>
+        <module>service_statistics</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -75,6 +80,18 @@
         <!--            <groupId>com.alibaba.cloud</groupId>-->
         <!--            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
         <!--        </dependency>-->
+
+        <dependency>
+            <groupId>com.ghw</groupId>
+            <artifactId>service_util</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ghw</groupId>
+            <artifactId>service_cmn_client</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

@@ -13,6 +13,9 @@
     <version>1.0.0</version>
     <modules>
         <module>service_cmn_client</module>
+        <module>service_user_client</module>
+        <module>service_hosp_client</module>
+        <module>service_order_client</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -31,6 +34,11 @@
             <groupId>com.ghw</groupId>
             <artifactId>model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!--注意这里Spring Cloud和Spring Boot的版本匹配问题-->

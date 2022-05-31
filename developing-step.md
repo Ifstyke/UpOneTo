@@ -40,3 +40,7 @@
         ```
        **这里千万注意踩坑，Spring Cloud Alibaba 版本和Spring Boot版本有着对应关系，如果不对应，会出现添加依赖错误，参考见博客：https://blog.csdn.net/m0_37352076/article/details/120650897**
     
+# 微信登录实现——OAuth2
+## OAuth针对一些特定问题解决方案
+* 开放系统间授权问题
+* 单点登录问题

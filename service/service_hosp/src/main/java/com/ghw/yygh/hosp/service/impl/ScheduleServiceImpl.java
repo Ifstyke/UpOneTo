@@ -342,7 +342,8 @@ public class ScheduleServiceImpl extends ServiceImpl<ScheduleMapper, Schedule> i
     //根据预约规则获取可预约数据（分页）
     private IPage getListData(Integer page, Integer limit, BookingRule bookingRule) {
         //获取当天放号时间  yyyy-MM-dd HH:mm
-        DateTime releaseTime = this.getDateTime(new Date(), bookingRule.getReleaseTime());
+        // DateTime releaseTime = this.getDateTime(new Date(), bookingRule.getReleaseTime());
+        DateTime releaseTime = this.getDateTime(new Date(2021, 3, 9), bookingRule.getReleaseTime());
         //获取预约周期
         Integer cycle = bookingRule.getCycle();
         //如果当天放号时间已过，预约周期从后一天开始计算，周期+1
